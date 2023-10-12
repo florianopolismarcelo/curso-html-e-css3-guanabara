@@ -3,39 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Outras Formatações</title>
+    <title>Listas</title>
   </head>
   <body>
-    <h1>Outras Formatações</h1>
-    <h2>Código-fonte / Pré-formatação</h2>
-    <p>
-      O comando document.getElementById('Teste') é escrito em linguagem
-      JavaScript
-    </p>
-    <pre>
-  <code>
-      num = int (input('Digite um número'))
-      if num % 2 == 0:
-      print (f'O número {num} é PAR)
-      else:
-      print (f'O número {num} é IMPAR)
-      print('Fim do programa')
-  </code>
-</pre>
-    <h2>Citações Simples</h2>
-    <p>
-      Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q>
-    </p>
-    <h2>Citações Completas</h2>
-    <p>Segundo Maurício Samy Silva, no livro HTML e CSS3 </p>
- 
-</html><blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-PT&gbpv=1&dq=html&printsec=frontcover">
-  Existem cento e oito elementos previstos nas especificações W3C para a HTML5(considerando que cada nível de cabeçalho conta como um elemento).
-</blockquote>
-<h2>Abreviações</h2>
-<p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.
-  Estou adorando.</p>
-  <h2>Texto invertido</h2>
-  <p><bdo dir="rtl">Esta frase está invertida, leia de trás para fente</bdo></p>
- </body>
+    <h1>TRabalhando com listas</h1>
+    <h2>Listas ordenadas simples sem type</h2>
+    <!--Simples pois sem o type-->
+    <ol>
+      <li>Acordar</li>
+      <li>Fazer uma Oração</li>
+      <li>Tomar Café</li>
+      <li>Escovar os Dentes</li>
+      <li>Ir para o Trabalho</li>
+      <li>Almoçar</li>
+      <li>Fazer Lanche da Tarde</li>
+      <li>Voltar para Casa</li>
+      <li>Tomar Banho</li>
+      <li>Jantar</li>
+      <li>Fazer Leitura</li>
+      <li>Dormir</li>
+    </ol>
+    <h2>Listas ordenadas com type</h2>
+    <!--Com o type ex: letra minuscula, maúscula, número você escolhe-->
+    <ol type="A">
+      <li>Acordar</li>
+      <li>Fazer uma Oração</li>
+      <li>Tomar Café</li>
+      <li>Escovar os Dentes</li>
+      <li>Ir para o Trabalho</li>
+      <li>Almoçar</li>
+      <li>Fazer Lanche da Tarde</li>
+      <li>Voltar para Casa</li>
+      <li>Tomar Banho</li>
+      <li>Jantar</li>
+      <li>Fazer Leitura</li>
+      <li>Dormir</li>
+    </ol>
+    <h2>Listas ordenadas com type e start</h2>
+    <!--Com o type e start ex: coloca a numeração do início, letra, romanos etc...-->
+    <ol type="I" start="7">
+      <li>Acordar</li>
+      <li>Fazer uma Oração</li>
+      <li>Tomar Café</li>
+      <li>Escovar os Dentes</li>
+      <li>Ir para o Trabalho</li>
+      <li>Almoçar</li>
+      <li>Fazer Lanche da Tarde</li>
+      <li>Voltar para Casa</li>
+      <li>Tomar Banho</li>
+      <li>Jantar</li>
+      <li>Fazer Leitura</li>
+      <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <!--Sem indetificação de número etc, pode colocar type para ficar com bolinha quadrado (disc) (circle) (square) obs: essa fica entre a tag <ul> </ul>-->
+    <ul type="square">
+      <li>Acordar</li>
+      <li>Fazer uma Oração</li>
+      <li>Tomar Café</li>
+      <li>Escovar os Dentes</li>
+      <li>Ir para o Trabalho</li>
+      <li>Almoçar</li>
+      <li>Fazer Lanche da Tarde</li>
+      <li>Voltar para Casa</li>
+      <li>Tomar Banho</li>
+      <li>Jantar</li>
+      <li>Fazer Leitura</li>
+      <li>Dormir</li>
+    </ul>
+  </body>
 </html>
