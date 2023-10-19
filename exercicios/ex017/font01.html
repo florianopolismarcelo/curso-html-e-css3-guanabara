@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fontes em CSS</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    h1, h2 {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes em CSS</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        /*Medidas Absolutas
+      cm, mm, in(polegada), px(Sempre use esse ou (em) que está abaixo), pt, pc
+      
+      Medidas Relativas
+      em, ex, rem, vw, vh, %
+      16px geralmente = 1em (16px tamanho normal padrão)
+      */
+        font-size: 1em;
+        /*lighter - normal - bold - boder*/
+      }
+      h1 {
+        /*
       font-family: 'Times New Roman', Times, serif;
-    }
-
-  </style>
-</head>
-<body>
-  <h1>Trabalhando com fontes</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis deleniti, ut repudiandae repellat qui officiis molestias sint placeat distinctio tempora quod nisi aliquam iste animi dolor doloribus blanditiis dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum praesentium autem in ratione. Eaque nulla, delectus cumque expedita corporis mollitia aspernatur laudantium voluptatem unde, ipsum fuga reprehenderit ex incidunt quas!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit mollitia cupiditate dolor obcaecati at pariatur perspiciatis tenetur incidunt quo vel architecto, error iure a officia laborum accusantium quaerat facilis. Ex.</p>
-  <h2>Subtítulo do exercício</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, exercitationem mollitia error voluptatem impedit praesentium at dolorem eligendi reprehenderit, voluptate maiores, minus cumque ut in sapiente vitae aperiam corrupti obcaecati?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum beatae, labore omnis eum tempore iste quod ipsum laudantium officiis molestiae nulla! Perspiciatis, debitis unde. Beatae placeat enim suscipit corrupti ex?</p>
-</body>
+      font-weight: bolder;
+      font-size: 3em;
+      font-style: italic;
+    
+      shorthand font(Agrupamento em uma linha do código) obrigatório estar na ordem abaixo:
+      
+      - font-style -> font-weight -> font-size -> font-family-
+       */
+        font: italic bolder 3em "Work Sans", sans-serif;
+      }
+      h2 {
+        font: bold 2em "Work Sans";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com fontes</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+      perspiciatis deleniti, ut repudiandae repellat qui officiis molestias sint
+      placeat distinctio tempora quod nisi aliquam iste animi dolor doloribus
+      blanditiis dicta. Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Nostrum praesentium autem in ratione. Eaque nulla, delectus cumque
+      expedita corporis mollitia aspernatur laudantium voluptatem unde, ipsum
+      fuga reprehenderit ex incidunt quas!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      mollitia cupiditate dolor obcaecati at pariatur perspiciatis tenetur
+      incidunt quo vel architecto, error iure a officia laborum accusantium
+      quaerat facilis. Ex.
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+      exercitationem mollitia error voluptatem impedit praesentium at dolorem
+      eligendi reprehenderit, voluptate maiores, minus cumque ut in sapiente
+      vitae aperiam corrupti obcaecati?Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Earum beatae, labore omnis eum tempore iste quod ipsum
+      laudantium officiis molestiae nulla! Perspiciatis, debitis unde. Beatae
+      placeat enim suscipit corrupti ex?
+    </p>
+  </body>
 </html>
