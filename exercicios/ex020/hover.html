@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Hover</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /*Comando abaixo só vai mexer no parágrafo que está dentro da div
+      sinal de > significa filho da div (Sendo assim só vai mexer no filho da 
+      div que é o paragrafo*/
+      div > p {
+        display: none;/*Esconde o paragrafo do div*/
+      }
+      div:hover > p { /*Mostra o paragrafo escondido*/
+        display: block;
+        color: white;
+        background-color: red;
+        width: 300px;
+      }
+      div:hover { /*Muda a cor do texto*/
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+      Passe o mouse aqui
+      <p>TEXTO ESCONDIDO</p>
+    </div>
+    <p>Fim do exemplo</p>
+  </body>
+</html>
