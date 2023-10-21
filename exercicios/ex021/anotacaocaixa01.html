@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelos de Caixas</title>
+    <style>
+      h1 {
+        /* elemento box-level */
+        background-color: lightgray;
+        height: 300px;
+        width: 300px;
+        /*
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkslategray;
+        
+        As linhas acima está simplificada nas linhas abaixo
+        é o que aprendemos em aulas antetiores (shorthand)
+        */
+        border: 10px solid darkslategray;
+
+        /*
+        Padding é a medida da borda para dentro
+        padding-top: 10px; 
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        
+        Também pode ser simplifica com (shorthand)
+        OBS: Se os 4 lados que funcionam sentido relógio forem iguais
+        ex: padding: 10px 10px 10px 10px;
+        pode ser feito 10px uma vez só como código abaixo:
+        */
+        padding: 10px; /*
+        Se fosse 2 valores caso 10px e 20px o de cima vai ser 10 e o de baixo vinte
+        o da direita será 20px e o da esquerda também será 20px faça o teste 
+        */
+
+        /*margin: auto; Ele posiciona a caixa no meio essa é a melhor referente a variedade de dispositivos
+        (Margin é da borda para fora)
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        Também será simplificada pela linha abaixo:
+
+        margin: 20px 20px 40px 20px;
+
+        OBS: Para centralizar a margin da direita e esquerda podemos colocar auto
+        veja abaixo:
+        */
+        margin: 20px auto 40px auto;
+        /*
+        outline-width: 5px; Fica entre a borda e a margin
+        outline-style: dashed; = dashed é o tracejado
+        outline-color: salmon;
+
+        Também vamos simplificar com (shorthand) veja código abaixo:
+        */
+        outline: 5px dashed salmon;
+      }
+      a {
+        /* elemento inline-level*/
+        /*
+        border-width: 10px;
+        border-style: solid;
+        border-color: red;
+        simplificado abaixo na ordem com (shorthand)
+        */
+        border: 10px solid red;
+
+        /*
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        simplificado abaixo na ordem com (shorthand)
+        */
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+      Parágrafo também são exemplos de box-level, mas os
+      <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como
+      tudo isso funciona.
+    </p>
+  </body>
+</html>
