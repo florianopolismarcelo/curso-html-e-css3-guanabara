@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+      }
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      nav {
+        background-color: rgb(102, 102, 102);
+        padding: 3px;
+      }
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+      nav > a:hover {
+        text-decoration: underline;
+      }
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+      article {
+        background-color: lightslategray;
+        padding: 5px;
+      }
+      article > aside {
+        background-color: rgb(165, 165, 165);
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--header = cabeçalho(Apresentação do site) não confunda com head(cabeça)-->
+      <h1>Meu site</h1>
+      <nav>
+        <!--nav ( você coloca os links)-->
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <!----><!--main (Conteúdo principal)-->
+      <section id="assuntos">
+        <!--section Sessão-->
+        <p>Esportes Políticas e Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <!--article Artigo dentro da sessão-->
+          <h2>Notícia sobre o Brasil</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem
+            sint quaerat iusto numquam repudiandae at ex amet! Cupiditate
+            voluptates quos quia tenetur soluta eum, officia ea aspernatur at
+            officiis?
+          </p>
+          <aside>
+            <!--aside Conteúdo relativo ao artigo exemplo dentro do paragráfo-->
+            <p>Artigo escrito por José da Silva</p>
+          </aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer>
+      <!--footer Rodapé-->
+      <p>desenvolvido pelo CursoemVideo</p>
+    </footer>
+  </body>
+</html>
