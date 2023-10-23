@@ -28,20 +28,47 @@ body {
   font-family: var(--fonte-padrao);
 }
 header {
-  background-color: var(--cor4);
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+  min-height: 150px; /*Altura minima*/
+  text-align: center;
+  padding-top: 40px; /*Espaço em cima*/
 }
 header > h1 {
   color: white;
   font-family: var(--fonte-destaque);
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 header > p {
+  font-family: var(--fonte-padrao);
+  font-size: 1.2em;
   color: white;
+  max-height: 600px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: auto;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
 nav {
   background-color: var(--cor5);
+  padding: 10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+nav > a {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: .5s; /*Tempo do efeito quando passa o mouse em cima*/
+}
+nav > a:hover {
+  background-color: var(--cor3);
+  color: var(--cor5);
 }
 main {
-  min-width: 300px; /*Largura minima celular em pé*/
+  min-width: 300px; /*Largura minima para celular em pé*/
   max-width: 1000px; /*Largura Máxima na tela*/
   margin: auto;
   margin-bottom: 30px; /*Margem em baixo*/
@@ -50,7 +77,6 @@ main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
   border-bottom-left-radius: 10px; /*Apenas bordas de baixo do lado esquedo arrendondadas*/
   border-bottom-right-radius: 10px; /*Apenas bordas de baixo do lado direito arrendondadas*/
-  
 }
 main h1 {
   color: var(--cor5);
