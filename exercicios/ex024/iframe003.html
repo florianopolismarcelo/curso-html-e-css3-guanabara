@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uso de iframes</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      iframe#tela {
+        width: 95vw;
+        height: 400px;
+        border: 2px solid black;
+      }
+    </style>
+
   </head>
   <body>
     <h1>Faça uma escolha</h1>
@@ -12,8 +23,13 @@
       amet labore repellendus inventore esse fuga voluptate adipisci? Aliquid
       omnis id cupiditate ducimus maxime, quos aspernatur illum autem qui sequi?
     </p>
-
-    
+    <ul>
+      <!--Muita ateção!!! O iframe tem que ter um name e esse name é o que é usado no target-->
+      <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+      <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+      <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+      
+    </ul>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quos neque
       eveniet voluptate maiores, minus corrupti perferendis soluta incidunt unde
@@ -21,6 +37,18 @@
       ipsum, dolor sit amet consectetur adipisicing elit. Sequi necessitatibus
       ipsum facilis magni eius nam natus veniam dolor mollitia? Optio quam,
       neque qui repellendus harum at iste ex culpa! Enim.
+    </p>
+    <iframe id="tela" name="frame" src="">
+      <p>Infelismente seu navegador não é compatível com isso.</p>
+    </iframe>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi totam rem
+      delectus sint maxime nam repellendus tempora nihil. Rem obcaecati
+      voluptatem labore minima? Quia ratione expedita reiciendis iste sunt
+      officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+      saepe odio iste fuga, et tenetur aliquid eius. Sunt dolores minus,
+      delectus exercitationem facilis ipsum repellendus unde, natus tempore
+      iusto nisi?
     </p>
   </body>
 </html>
