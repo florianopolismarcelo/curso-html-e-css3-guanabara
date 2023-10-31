@@ -14,7 +14,6 @@
         border: 2px solid black;
       }
     </style>
-
   </head>
   <body>
     <h1>Faça uma escolha</h1>
@@ -25,10 +24,15 @@
     </p>
     <ul>
       <!--Muita ateção!!! O iframe tem que ter um name e esse name é o que é usado no target-->
-      <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
-      <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
-      <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
-      
+      <li>
+        <a href="paginas-extras/pag001.html" target="frame">Primeira página</a>
+      </li>
+      <li>
+        <a href="paginas-extras/pag002.html" target="frame">Segunda página</a>
+      </li>
+      <li>
+        <a href="paginas-extras/pag003.html" target="frame">Terceira página</a>
+      </li>
     </ul>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quos neque
@@ -38,7 +42,16 @@
       ipsum facilis magni eius nam natus veniam dolor mollitia? Optio quam,
       neque qui repellendus harum at iste ex culpa! Enim.
     </p>
-    <iframe id="tela" name="frame" src="">
+    <iframe
+      id="tela"
+      name="frame"
+      srcdoc="<h1>Escolha uma das opções acima</h1><p> Lorem, ipsum dolor sit amet
+      consectetur adipisicing elit. Nam quos neque
+      eveniet voluptate maiores, minus corrupti perferendis soluta incidunt unde
+      optio voluptatum facilis eos earum quas cum maxime modi eligendi? Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Sequi necessitatibus
+      ipsum facilis magni eius nam natus veniam dolor mollitia? Optio quam,
+      neque qui repellendus harum at iste ex culpa! Enim.</p> <img src='imagens/coracao.png'>">
       <p>Infelismente seu navegador não é compatível com isso.</p>
     </iframe>
     <p>
