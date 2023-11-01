@@ -7,14 +7,19 @@
   </head>
   <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
       <p>
         <label for="iusu">Usuário</label>
-        <input type="text" name="usu" id="iusu" />
+         <!--required = é para campo ser de preenchimento obrigatório-->
+        <!--minlength = é o minimo de letras-->
+        <!--maxlength = é o máximo de letras-->
+        <!--size = quantas letras vai mostrar por vez-->
+        <!--placeholder = o que vai aparecer dentro da caixa-->
+        <input type="text" name="usu" id="iusu" required required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username"/>
       </p>
       <p>
         <label for="isen">Senha:</label>
-        <input type="password" name="sen" id="isen" />
+        <input type="password" name="sen" id="isen" minlength="4" maxlength="8" size="8" placeholder="mínimo 4 digitros" autocomplete="current-password"/>
       </p>
       <p>
         <input type="submit" value="Enviar" />
